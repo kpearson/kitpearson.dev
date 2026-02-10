@@ -1,36 +1,55 @@
 <section class="py-20 px-6 bg-slate-50">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">Case Study</h2>
-
-    <div class="bg-white rounded-lg shadow-lg p-8 border-l-4 border-blue-600">
-      <div class="mb-6">
+    <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 border-l-4 border-blue-600">
+      <div class="mb-8">
         <div class="text-5xl font-bold text-blue-600 mb-2">$300 → $13</div>
-        <div class="text-xl text-slate-600">per user per month</div>
+        <div class="text-xl text-slate-600">per user, per month.</div>
       </div>
 
-      <h3 class="text-2xl font-semibold mb-4 text-slate-900">
-        95% Cost Reduction in Production AI Infrastructure
-      </h3>
-
-      <div class="space-y-4 text-slate-700">
+      <div class="prose prose-slate max-w-none space-y-4 text-lg leading-relaxed">
         <p>
-          <strong class="text-slate-900">Challenge:</strong> SaaS platform with AI-powered features facing unsustainable compute costs at $300/user/month.
+          I built an AI application where users stayed for <strong>hours</strong> — not minutes. Long, complex conversations with real engagement. The kind of usage metrics founders dream about.
+        </p>
+
+        <p>Then the AWS bill arrived.</p>
+
+        <p>
+          Token usage was growing quadratically. Every message reprocessed the entire conversation history. My best customers — the ones getting the most value — were the most expensive to serve. The better the product performed, the shorter my runway became.
+        </p>
+
+        <p class="font-semibold text-slate-900">
+          8 weeks of capital left. Growing user base. Costs accelerating.
+        </p>
+
+        <p>I rebuilt the entire context architecture:</p>
+
+        <ul class="list-disc pl-6 space-y-2 text-base">
+          <li>Multi-tier model strategy — cost-effective models for context curation, frontier models only where they matter</li>
+          <li>Dynamic RAG with similarity search instead of brute-force history passing</li>
+          <li>Hierarchical memory system replacing full conversation replay</li>
+          <li>4K token caps with intelligent summarization</li>
+          <li>Prompt restructuring that made caching actually reduce costs (it increased them by 20% initially)</li>
+        </ul>
+
+        <p class="font-semibold text-slate-900">
+          Result: 96% cost reduction. 50% gross margins. Profitable unit economics.
         </p>
 
         <p>
-          <strong class="text-slate-900">Approach:</strong> Comprehensive infrastructure audit, model optimization, intelligent caching layer, and prompt engineering improvements.
+          No degradation in user experience. Same hours-long sessions. Same engagement. The AI still "remembers" — it just doesn't reread everything every time.
         </p>
 
-        <p>
-          <strong class="text-slate-900">Result:</strong> Reduced costs to $13/user/month while maintaining feature quality. Deployment completed in 3 weeks.
+        <p class="text-base">
+          The infrastructure runs on 15+ AWS services — ECS, Aurora with pgvector, ElastiCache, CloudFront, WAF, Bedrock — at 99.9% uptime. Total infrastructure cost: $2/user/month.
         </p>
 
-        <div class="bg-slate-50 p-4 rounded mt-6">
-          <p class="text-sm italic text-slate-600">
-            "The cost optimization work made our AI features economically viable. We can now scale confidently."
-          </p>
-          <p class="text-sm mt-2 text-slate-500">— Engineering Lead, Series B SaaS Company</p>
-        </div>
+        <p class="font-semibold text-slate-900">
+          Most companies running production AI workloads have this same problem and don't know it yet. They built fast, shipped, and haven't looked at the bill. When they do, the math won't work.
+        </p>
+
+        <p class="text-xl font-semibold text-blue-600">
+          I find the money they're wasting and fix the architecture that's causing it.
+        </p>
       </div>
     </div>
   </div>
