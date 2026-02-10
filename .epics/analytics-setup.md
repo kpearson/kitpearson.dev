@@ -13,21 +13,21 @@
   - Deploy and verify GTM is loading (use GTM Preview mode)
 
 ### 2. Set up Google Analytics 4
-- [ ] Create GA4 property
+- [x] Create GA4 property
   - Sign in to Google Analytics (analytics.google.com)
   - Create new property for kitpearson.dev
-  - Get Measurement ID (format: G-XXXXXXXXXX)
+  - Get Measurement ID (G-M6YQVWWXN7)
 
-- [ ] Configure GA4 tag in GTM
-  - Add new GA4 Configuration tag in GTM
+- [x] Configure GA4 tag in GTM
+  - Add new Google Tag in GTM
   - Set Measurement ID
   - Add trigger: All Pages
   - Test in GTM Preview mode
 
-- [ ] Publish GTM container
+- [x] Publish GTM container
   - Review changes
   - Publish container
-  - Verify in GA4 Realtime view
+  - Verify in GA4 Realtime view ✅
 
 ### 3. Configure events (optional)
 - [ ] Track "Book a call" CTA clicks
