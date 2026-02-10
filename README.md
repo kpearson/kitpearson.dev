@@ -81,14 +81,6 @@ src/
   app.html
 ```
 
-## Checklist
+## Tasks
 
-- [ ] Scaffold SvelteKit project
-- [ ] Landing page sections
-- [ ] Case study: $300 ? $13/user/month cost optimization
-- [ ] Book-a-call CTA (Calendly or Cal.com)
-- [ ] Buy domain
-- [ ] S3 + CloudFront + ACM setup
-- [ ] Route 53 DNS
-- [ ] GitHub Actions deploy pipeline
-- [ ] Ship it
+See [.epics/tasks.md](.epics/tasks.md) for project task list and planning.
